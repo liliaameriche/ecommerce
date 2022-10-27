@@ -1,0 +1,133 @@
+<html>
+    <head>
+        <title> NorthAfricanStuffs</title>
+        <!-- CSS only -->
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" media="screen and (max-width: 1280px)" href="petite_resolution.css" /> <!-- Pour ceux qui ont une résolution inférieure à 1280px -->
+    </head>
+    <body>
+         
+        <div class="tete">
+            <a href="index.html"><img src="./picture/logo.jpg" alt="logo" style="width: 20%; height: auto;"></a>
+        </div>       
+         
+         <!--Main-Container-->
+        <div class ="main-container">
+            <!--La barre de recherche-->
+            
+                <div class="nav">
+                    <div class="nav-items">
+                        <div class="search">
+                            <input type="text" class="search-box" placeholder="search brand, product">
+                            <button class="search-btn">search</button>
+                        </div>
+                    </div>
+                </div>
+                <ul class="links-container">
+                    <li class="link-item"><a href="#" class="link">Home</a></li>
+                    <li class="link-item"><a href="#" class="link">Clothes</a></li>
+                    <li class="link-item"><a href="pages/product.html" class="link">Food</a></li>
+                    <li class="link-item"><a href="#" class="link">Accessories</a></li>
+                    <li class="link-item"><a href="#" class="link">About us</a></li>
+                </ul>
+<!--SlideShow images-->
+                <div class="slideshow">
+                    <img class="mySlides" src="./picture/slide1.jpg" style="width:100%; height:100%;">
+                    <img class="mySlides" src="./picture/slide2.jpg" style="width:100%; height:100%;">
+                    <img class="mySlides" src="./picture/slide3.jpg" style="width:100%; height:100%;">
+                </div> 
+
+                <hr style="width: 80%;">
+
+                <h2 style="font-family: cursive; text-align: center;">Hello Overy One</h2>
+            </div>
+            
+
+            <!--Footer-->
+            <footer class="footer-distributed">
+
+                <div class="footer-left">
+    
+                    <h3>Mediterranean<span> Living </span></h3>
+    
+                    <p class="footer-links">
+                        <a href="index.html">Home</a>
+                        
+                        <a href="#">Clothes</a>
+                    
+                        <a href="pages/product.html">Food</a>
+                    
+                        <a href="pages/product.html">Food</a>  
+
+                        <a href="#">Accessories</a>
+                        
+                        <a href="#">About us</a>
+                        
+                    </p>
+    
+                    <p class="footer-company-name">Mediterranean Living © 2022</p>
+                </div>
+    
+                <div class="footer-center">
+    
+                    <div>
+                        <p><span>Some Where in United States of America </span> The place doesn't matter ! <br> The important thing is that we can deliver to you Where ever you are 😊 </p>
+                    </div>
+    
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <p>+1.555.555.5555</p>
+                    </div>
+    
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <p><a href="mailto:mediterraneanliving@gmail.com">mediterraneanliving@gmail.com</a></p>
+                    </div>
+    
+                </div>
+    
+                <div class="footer-right">
+    
+                    <p class="footer-company-about">
+                        <span>About the company</span>
+                        Welcome the this new WebSite for shopping and buying North African Products
+                        the basic stuffs you will find here are from Algeria, Tunisia and Morroco.
+                </p>
+    
+                    <div class="footer-icons">
+    
+                        <a href="#"><img src="./picture/facebook.png" alt="Facebook-icons" style="width: 35px; height: 35px;"></a>
+                        <a href="#"><img src="./picture/instagram.png" alt="Instagram-icons" style="width: 35px; height: 35px;"></a>
+                        <a href="#"><img src="./picture/gmail.png" alt="Gmail-icons" style="width: 35px; height: 35px;"></a>
+    
+                    </div>
+    
+                </div>
+    
+            </footer>
+
+
+
+        <!---Java Script-->
+    
+        <script>
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}    
+              x[myIndex-1].style.display = "block";  
+              setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+        </script>
+    </body>
+
+
+
+</html>
